@@ -1,0 +1,70 @@
+:root {
+  /* COLORS */
+  --Neutral-Dark-800: #333;
+  --Neutral-Grey-600: #6B6261;
+  --Neutral-Light-100: #fefefa;
+
+  /* TYPOGRAPHY */
+  --ff-base: 'Poppins', sans-serif;
+  --fw-light: 200;
+  --fw-medium: 400;
+  --fw-bold: 600;
+}
+
+/* GENERAL STYLING*/
+body {
+  font-family: var(--ff-base);
+  font-weight: var(--fw-medium);
+  color: var(--Neutral-Dark-800);
+  background-color: var(--Neutral-Light-100);
+  height: calc (100vh - 1px);
+  text-align: center;
+}
+
+.header {
+  padding-bottom: 40px;
+}
+
+#btn-restart {
+  font-size: .9rem;
+  gap: .75rem;
+  padding: .75em 1.5em;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--Neutral-Grey-600);
+  color: var(--Neutral-Light-100);
+  cursor: pointer;
+}
+
+#game {
+  display: flex;
+  justify-content: center;
+}
+
+/* game board table */
+
+#board td {
+  width: 50px;
+  height: 50px;
+  border: solid 1px #aaa;
+}
+
+/* pieces are div within game table cells: draw as colored circles */
+
+.piece {
+  /* TODO: make into circles */
+  margin: 5px;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+}
+
+/* column-top is table row of clickable areas for each column */
+
+#column-top td {
+  border: dashed 1px lightgray;
+}
+
+#column-top td:hover {
+  background-color: gold;
+}
